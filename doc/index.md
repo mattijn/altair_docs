@@ -1,504 +1,69 @@
-# API reference
+# Altair: Declarative Visualization in Python
 
-This is the class and function reference of Altair, and the following content
-is generated automatically from the code documentation strings.
-Please refer to the `full user guide <http://altair-viz.github.io>`\_ for
-further details, as this low-level documentation may not be enough to give
-full guidelines on their use.
+Altair is a declarative statistical visualization library for Python, based on
+Vega* and Vega-Lite*, and the source is available on
+`GitHub <http://github.com/altair-viz/altair>`\_.
 
-## Top-Level Objects
+With Altair, you can spend more time understanding your data and its meaning.
+Altair's API is simple, friendly and consistent and built on top of the
+powerful Vega-Lite\_ visualization grammar. This elegant simplicity produces
+beautiful and effective visualizations with a minimal amount of code.
 
-.. currentmodule:: altair
+```{toctree}
+:maxdepth: 2
+:caption: Getting started
+getting_started/index
+```
 
-.. autosummary::
-:toctree: generated/toplevel/
-:nosignatures:
+```{toctree}
+:maxdepth: 2
+:caption: Examples
+examples/index
+```
 
-Chart
-ConcatChart
-FacetChart
-HConcatChart
-LayerChart
-RepeatChart
-TopLevelMixin
-VConcatChart
+```{toctree}
+:maxdepth: 2
+:caption: User Guide
+user_guide/index
+```
 
-## Encoding Channels
+```{toctree}
+:maxdepth: 2
+:caption: API reference
+reference/index
+```
 
-.. currentmodule:: altair
+```{toctree}
+:maxdepth: 2
+:caption: Tutorials
+tutorials/index
+```
 
-.. autosummary::
-:toctree: generated/channels/
-:nosignatures:
+```{toctree}
+:maxdepth: 2
+:caption: Development
+development/index
+```
 
-Color
-ColorValue
-Column
-Detail
-Facet
-Fill
-FillOpacity
-FillOpacityValue
-FillValue
-Href
-HrefValue
-Key
-Latitude
-Latitude2
-Latitude2Value
-LatitudeValue
-Longitude
-Longitude2
-Longitude2Value
-LongitudeValue
-Opacity
-OpacityValue
-Order
-OrderValue
-Row
-Shape
-ShapeValue
-Size
-SizeValue
-Stroke
-StrokeDash
-StrokeDashValue
-StrokeOpacity
-StrokeOpacityValue
-StrokeValue
-StrokeWidth
-StrokeWidthValue
-Text
-TextValue
-Tooltip
-TooltipValue
-Url
-UrlValue
-X
-X2
-X2Value
-XError
-XError2
-XError2Value
-XErrorValue
-XValue
-Y
-Y2
-Y2Value
-YError
-YError2
-YError2Value
-YErrorValue
-YValue
+```{toctree}
+:maxdepth: 2
+:caption: Release notes
+releases/changes
+```
 
-## API Functions
+## Bug Reports & Questions
 
-.. currentmodule:: altair
+Altair is BSD-licensed and the source is available on `GitHub`_. If any
+questions or issues come up as you use Altair, please get in touch via
+`Git Issues`_ or our `Google Group`\_.
 
-.. autosummary::
-:toctree: generated/api/
-:nosignatures:
+## Indices and tables
 
-binding
-binding_checkbox
-binding_radio
-binding_range
-binding_select
-concat
-condition
-graticule
-hconcat
-layer
-repeat
-selection
-selection_interval
-selection_multi
-selection_single
-sequence
-sphere
-topo_feature
-value
-vconcat
+- :ref:`genindex`
+- :ref:`modindex`
 
-## Low-Level Schema Wrappers
-
-.. currentmodule:: altair
-
-.. autosummary::
-:toctree: generated/core/
-:nosignatures:
-
-Aggregate
-AggregateOp
-AggregateTransform
-AggregatedFieldDef
-Align
-AllSortString
-AnyMark
-AnyMarkConfig
-AreaConfig
-ArgmaxDef
-ArgminDef
-AutoSizeParams
-AutosizeType
-Axis
-AxisConfig
-AxisOrient
-AxisResolveMap
-BarConfig
-BaseTitleNoValueRefs
-Baseline
-BinExtent
-BinParams
-BinTransform
-BindCheckbox
-BindRadioSelect
-BindRange
-Binding
-Blend
-BoxPlot
-BoxPlotConfig
-BoxPlotDef
-BrushConfig
-CalculateTransform
-Categorical
-Color
-ColorGradientFieldDefWithCondition
-ColorGradientValueWithCondition
-ColorName
-ColorScheme
-CompositeMark
-CompositeMarkDef
-CompositionConfig
-ConcatSpecGenericSpec
-ConditionalAxisColor
-ConditionalAxisLabelAlign
-ConditionalAxisLabelBaseline
-ConditionalAxisLabelFontStyle
-ConditionalAxisLabelFontWeight
-ConditionalAxisNumber
-ConditionalAxisNumberArray
-ConditionalAxisPropertyAlignnull
-ConditionalAxisPropertyColornull
-ConditionalAxisPropertyFontStylenull
-ConditionalAxisPropertyFontWeightnull
-ConditionalAxisPropertyTextBaselinenull
-ConditionalAxisPropertynumbernull
-ConditionalAxisPropertystringnull
-ConditionalAxisString
-ConditionalMarkPropFieldDef
-ConditionalMarkPropFieldDefTypeForShape
-ConditionalNumberValueDef
-ConditionalPredicateMarkPropFieldDef
-ConditionalPredicateMarkPropFieldDefTypeForShape
-ConditionalPredicateNumberValueDef
-ConditionalPredicateStringFieldDef
-ConditionalPredicateStringValueDef
-ConditionalPredicateValueDefAlignnull
-ConditionalPredicateValueDefColornull
-ConditionalPredicateValueDefFontStylenull
-ConditionalPredicateValueDefFontWeightnull
-ConditionalPredicateValueDefGradientstringnull
-ConditionalPredicateValueDefText
-ConditionalPredicateValueDefTextBaselinenull
-ConditionalPredicateValueDefnumber
-ConditionalPredicateValueDefnumbernull
-ConditionalPredicateValueDefstring
-ConditionalSelectionMarkPropFieldDef
-ConditionalSelectionMarkPropFieldDefTypeForShape
-ConditionalSelectionNumberValueDef
-ConditionalSelectionStringFieldDef
-ConditionalSelectionStringValueDef
-ConditionalSelectionValueDefGradientstringnull
-ConditionalSelectionValueDefText
-ConditionalSelectionValueDefnumber
-ConditionalSelectionValueDefstring
-ConditionalStringFieldDef
-ConditionalStringValueDef
-ConditionalValueDefGradientstringnull
-ConditionalValueDefText
-ConditionalValueDefnumber
-ConditionalValueDefstring
-Config
-CsvDataFormat
-Cursor
-Cyclical
-Data
-DataFormat
-DataSource
-Datasets
-DateTime
-Day
-DensityTransform
-DerivedStream
-DictInlineDataset
-DictSelectionInit
-DictSelectionInitInterval
-Diverging
-DomainUnionWith
-DsvDataFormat
-Element
-Encoding
-EncodingSortField
-EncodingSortFieldFieldName
-ErrorBand
-ErrorBandConfig
-ErrorBandDef
-ErrorBar
-ErrorBarConfig
-ErrorBarDef
-ErrorBarExtent
-EventStream
-EventType
-Expr
-FacetEncodingFieldDef
-FacetFieldDef
-FacetFieldDefFieldName
-FacetMapping
-FacetMappingFieldName
-FacetSpec
-FacetedEncoding
-FacetedUnitSpec
-Field
-FieldDefWithConditionMarkPropFieldDefGradientstringnull
-FieldDefWithConditionMarkPropFieldDefTypeForShapestringnull
-FieldDefWithConditionMarkPropFieldDefnumber
-FieldDefWithConditionStringFieldDefText
-FieldDefWithConditionStringFieldDefstring
-FieldDefWithoutScale
-FieldEqualPredicate
-FieldGTEPredicate
-FieldGTPredicate
-FieldLTEPredicate
-FieldLTPredicate
-FieldName
-FieldOneOfPredicate
-FieldRangePredicate
-FieldValidPredicate
-FilterTransform
-Fit
-FlattenTransform
-FoldTransform
-FontStyle
-FontWeight
-Generator
-GeoJsonFeature
-GeoJsonFeatureCollection
-Gradient
-GradientStop
-GraticuleGenerator
-GraticuleParams
-HConcatSpecGenericSpec
-Header
-HeaderConfig
-HexColor
-ImputeMethod
-ImputeParams
-ImputeSequence
-ImputeTransform
-InlineData
-InlineDataset
-InputBinding
-Interpolate
-IntervalSelection
-IntervalSelectionConfig
-JoinAggregateFieldDef
-JoinAggregateTransform
-JsonDataFormat
-LabelOverlap
-LatLongFieldDef
-LayerSpec
-LayoutAlign
-Legend
-LegendBinding
-LegendConfig
-LegendOrient
-LegendResolveMap
-LegendStreamBinding
-LineConfig
-LinearGradient
-LocalMultiTimeUnit
-LocalSingleTimeUnit
-LoessTransform
-LogicalAndPredicate
-LogicalNotPredicate
-LogicalOrPredicate
-LookupData
-LookupSelection
-LookupTransform
-Mark
-MarkConfig
-MarkDef
-MarkType
-MergedStream
-Month
-MultiSelection
-MultiSelectionConfig
-MultiTimeUnit
-NamedData
-NonArgAggregateOp
-NormalizedConcatSpecGenericSpec
-NormalizedFacetSpec
-NormalizedHConcatSpecGenericSpec
-NormalizedSpec
-NormalizedVConcatSpecGenericSpec
-NumberValueDef
-NumericArrayFieldDefWithCondition
-NumericArrayValueDefWithCondition
-NumericFieldDefWithCondition
-NumericValueWithCondition
-OrderFieldDef
-Orient
-Orientation
-OverlayMarkDef
-Padding
-Parse
-ParseValue
-PivotTransform
-PositionFieldDef
-Predicate
-PredicateComposition
-Projection
-ProjectionConfig
-ProjectionType
-QuantileTransform
-RadialGradient
-RangeConfig
-RangeEnum
-RangeRaw
-RangeRawArray
-RangeScheme
-RectConfig
-RegressionTransform
-RepeatMapping
-RepeatRef
-RepeatSpec
-Resolve
-ResolveMode
-Root
-RowColLayoutAlign
-RowColboolean
-RowColnumber
-RowColumnEncodingFieldDef
-SampleTransform
-Scale
-ScaleBinParams
-ScaleBins
-ScaleConfig
-ScaleInterpolateEnum
-ScaleInterpolateParams
-ScaleResolveMap
-ScaleType
-SchemaBase
-SchemeParams
-SecondaryFieldDef
-SelectionAnd
-SelectionComposition
-SelectionConfig
-SelectionDef
-SelectionExtent
-SelectionInit
-SelectionInitInterval
-SelectionInitIntervalMapping
-SelectionInitMapping
-SelectionNot
-SelectionOr
-SelectionPredicate
-SelectionResolution
-SequenceGenerator
-SequenceParams
-SequentialMultiHue
-SequentialSingleHue
-ShapeFieldDefWithCondition
-ShapeValueWithCondition
-SingleDefUnitChannel
-SingleSelection
-SingleSelectionConfig
-SingleTimeUnit
-Sort
-SortArray
-SortByChannel
-SortByChannelDesc
-SortByEncoding
-SortField
-SortOrder
-Spec
-SphereGenerator
-StackOffset
-StackTransform
-StandardType
-Step
-Stream
-StringFieldDef
-StringFieldDefWithCondition
-StringValueWithCondition
-StringValueWithConditionTypeForShape
-StyleConfigIndex
-SymbolShape
-Text
-TextBaseline
-TextDirection
-TextFieldDefWithCondition
-TextValueWithCondition
-TickConfig
-TickCount
-TimeInterval
-TimeIntervalStep
-TimeUnit
-TimeUnitParams
-TimeUnitTransform
-TitleAnchor
-TitleConfig
-TitleFrame
-TitleOrient
-TitleParams
-TooltipContent
-TopLevelFacetSpec
-TopLevelLayerSpec
-TopLevelNormalizedConcatSpecGenericSpec
-TopLevelNormalizedHConcatSpecGenericSpec
-TopLevelNormalizedVConcatSpecGenericSpec
-TopLevelRepeatSpec
-TopLevelSpec
-TopLevelUnitSpec
-TopoDataFormat
-Transform
-TypeForShape
-TypedFieldDef
-UnitSpec
-UnitSpecWithFrame
-UrlData
-UtcMultiTimeUnit
-UtcSingleTimeUnit
-VConcatSpecGenericSpec
-Value
-ValueConditionGradientstringnull
-ValueConditionText
-ValueConditionnumber
-ValueConditionstring
-ValueConditionstringnull
-ValueDefWithConditionMarkPropFieldDefGradientstringnull
-ValueDefWithConditionMarkPropFieldDefTypeForShapestringnull
-ValueDefWithConditionMarkPropFieldDefnumber
-ValueDefWithConditionMarkPropFieldDefstringnull
-ValueDefWithConditionStringFieldDefText
-ValueWithConditionMarkPropFieldDefGradientstringnull
-ValueWithConditionMarkPropFieldDefTypeForShapestringnull
-ValueWithConditionMarkPropFieldDefnumber
-ValueWithConditionMarkPropFieldDefstringnull
-ValueWithConditionStringFieldDefText
-Vector2DateTime
-Vector2Vector2number
-Vector2boolean
-Vector2number
-Vector2string
-Vector3number
-VegaLiteSchema
-ViewBackground
-ViewConfig
-WindowEventType
-WindowFieldDef
-WindowOnlyOp
-WindowTransform
-XValueDef
-YValueDef
+.. \_GitHub: http://github.com/altair-viz/altair
+.. \_Git Issues: http://github.com/altair-viz/altair/issues
+.. \_Vega: http://vega.github.io/vega
+.. \_Vega-Lite: http://vega.github.io/vega-lite
+.. \_Google Group: https://groups.google.com/forum/#!forum/altair-viz
